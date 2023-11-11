@@ -6,5 +6,7 @@ plugins {
     alias(libs.plugins.kapt) apply false
     alias(libs.plugins.androidLibrary) apply false
 
+
+
 }
 true // Needed to make the Suppress annotation work for the plugins block

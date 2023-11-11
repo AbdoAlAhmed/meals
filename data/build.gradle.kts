@@ -31,6 +31,8 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+
 }
 
 dependencies {
@@ -41,6 +43,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation(project(":domain"))
     implementation(libs.retrofit)
+    implementation(libs.okHttp)
+    implementation(libs.retrofit.gson)
+    implementation(libs.interceptor)
 }

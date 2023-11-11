@@ -5,5 +5,5 @@ import com.meso.domain.repo.RepoMeal
 
 class MealUseCase (private val repo: RepoMeal) {
 
-    suspend fun getMeal():MealCategory= repo.getMeals()
+    suspend fun getMeal(): MealCategory = repo.getMeals()
 }

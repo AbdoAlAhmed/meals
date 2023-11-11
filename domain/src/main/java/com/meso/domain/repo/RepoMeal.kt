@@ -1,8 +1,7 @@
 package com.meso.domain.repo
 
-import com.meso.data.model.MealCategory
+import com.meso.data.remote.RetrofitInstance
 
-
-interface RepoMeal {
-    suspend fun getMeals(): MealCategory
+class RepoMeal (private val retrofitInstance: RetrofitInstance) {
+   suspend fun getMeals () = retrofitInstance.ApiServices().getMeals()
 }

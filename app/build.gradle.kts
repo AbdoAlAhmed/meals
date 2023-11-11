@@ -38,6 +38,9 @@ android {
     buildFeatures {
         dataBinding = true
     }
+    kapt{
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -55,7 +58,7 @@ dependencies {
     implementation(libs.retrofit.gson)
     implementation(libs.glide)
     implementation(libs.okHttp)
-    implementation(libs.dagger)
+    implementation(libs.koin)
     implementation(project(":data"))
     implementation(project(":domain"))
 }
